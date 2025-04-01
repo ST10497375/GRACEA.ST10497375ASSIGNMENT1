@@ -8,61 +8,66 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="152dp"
-        android:layout_marginBottom="648dp"
+        android:id="@+id/txeFoodietextView"
+        android:layout_width="503dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="cursive"
         android:text="Foodie"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="60sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/TimeeditText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="184dp"
+        android:id="@+id/txeTimeEditText"
+        android:layout_width="313dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="58dp"
         android:ems="10"
         android:inputType="text"
-        android:text="input time"
-        android:textSize="24sp"
+        android:text="inset time here"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.014"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/txeFoodietextView" />
 
     <Button
-        android:id="@+id/BeginButton"
-        android:layout_width="350dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="27dp"
-        android:text="START"
+        android:id="@+id/btnBeginButton"
+        android:layout_width="465dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="25dp"
+        android:text="start"
+        android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TimeeditText" />
+        app:layout_constraintTop_toBottomOf="@+id/txeTextView" />
 
-    <Button
-        android:id="@+id/RestartButton"
+    <TextView
+        android:id="@+id/txeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="159dp"
-        android:layout_marginTop="434dp"
-        android:layout_marginEnd="162dp"
-        android:text="RESET"
-        android:textSize="20sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="93dp"
+        android:text="meal appears here"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BeginButton" />
+        app:layout_constraintTop_toBottomOf="@+id/txeTimeEditText" />
 
+    <Button
+        android:id="@+id/btnRestartButton"
+        android:layout_width="201dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="116dp"
+        android:text="reset"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBeginButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>
